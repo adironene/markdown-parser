@@ -5,8 +5,6 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.ArrayList;
 
-import javax.swing.plaf.ColorUIResource;
-
 public class MarkdownParse {
 
     public static ArrayList<String> getLinks(String markdown) {
