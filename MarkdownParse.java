@@ -12,15 +12,10 @@ public class MarkdownParse {
         // find the next [, then find the ], then find the (, then read link upto next )
         int currentIndex = 0;
         while (currentIndex < markdown.length()) {
-            System.out.println(currentIndex);
             int openBracket = markdown.indexOf("[", currentIndex);
             int closeBracket = markdown.indexOf("]", openBracket);
             int openParen = markdown.indexOf("(", closeBracket);
             int closeParen = markdown.indexOf(")", openParen);
-            System.out.println(openBracket);
-            System.out.println(closeBracket);
-            System.out.println(openParen);
-            System.out.println(closeParen);
             if (openBracket == -1 || closeBracket == -1 || openParen == -1 || closeParen == -1)
                 break;
             if (openBracket != 0 && markdown.substring(openBracket - 1, openBracket).equals("!")){
