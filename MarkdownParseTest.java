@@ -43,7 +43,8 @@ public class MarkdownParseTest {
         ArrayList<String> correct_links = new ArrayList<>(Arrays.asList());
         assertEquals(links, correct_links);
     }
-
+    
+    @Test
     public void testImage() throws IOException {
         Path fileName = Path.of("testImage.md");
         String content = Files.readString(fileName);
