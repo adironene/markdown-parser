@@ -4,7 +4,6 @@ import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-
 import static org.junit.Assert.*;
 import org.junit.*;
 
@@ -43,7 +42,7 @@ public class MarkdownParseTest {
         ArrayList<String> correct_links = new ArrayList<>(Arrays.asList());
         assertEquals(links, correct_links);
     }
-    
+
     @Test
     public void testImage() throws IOException {
         Path fileName = Path.of("testImage.md");
